@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-primary: "Geologica", sans-serif;
+  --breakpoint-deva: 990px;
+  --breakpoint-peta: 500px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  @apply flex !h-20 !w-20 items-center justify-center !rounded-full !border-2 !border-white !bg-white/50 text-white;
+  top: auto !important;
+  bottom: -7rem !important;
+}
+
+.swiper,
+.swiper-wrapper {
+  overflow: visible !important;
+}
+@media (min-width: 500px) {
+  .swiper-button-prev {
+    left: 25% !important;
+  }
+  .swiper-button-next {
+    right: 25% !important;
+  }
+}
+.no-scroll {
+  overflow: hidden;
+}
